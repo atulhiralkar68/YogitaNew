@@ -5,12 +5,12 @@
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-26T12:07:19 IST" name="Default suite" finished-at="2022-02-26T12:07:26 IST" duration-ms="6770">
+  <suite started-at="2022-03-31T23:00:21 IST" name="Default suite" finished-at="2022-03-31T23:00:29 IST" duration-ms="7027">
     <groups>
     </groups>
-    <test started-at="2022-02-26T12:07:19 IST" name="Default test" finished-at="2022-02-26T12:07:26 IST" duration-ms="6770">
-      <class name="test_Scripts.TestScript1">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_Scripts.TestScript1@4229bb3f]" started-at="2022-02-26T12:07:19 IST" name="openApplication" finished-at="2022-02-26T12:07:23 IST" duration-ms="4010" status="PASS">
+    <test started-at="2022-03-31T23:00:21 IST" name="Default test" finished-at="2022-03-31T23:00:29 IST" duration-ms="7027">
+      <class name="test_Scripts.SampleTest">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_Scripts.SampleTest@25084a1e]" started-at="2022-03-31T23:00:22 IST" name="openApplication" finished-at="2022-03-31T23:00:28 IST" duration-ms="6448" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,27 +24,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="testScript1(java.lang.String,java.lang.String)[pri:0, instance:test_Scripts.TestScript1@4229bb3f]" started-at="2022-02-26T12:07:24 IST" name="testScript1" data-provider="testdata" finished-at="2022-02-26T12:07:26 IST" duration-ms="1321" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="sample()[pri:0, instance:test_Scripts.SampleTest@25084a1e]" started-at="2022-03-31T23:00:28 IST" name="sample" finished-at="2022-03-31T23:00:28 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScript1 -->
-        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.TestScript1@4229bb3f]" started-at="2022-02-26T12:07:26 IST" name="CloseApp" finished-at="2022-02-26T12:07:26 IST" duration-ms="385" status="PASS">
+        </test-method> <!-- sample -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.SampleTest@25084a1e]" started-at="2022-03-31T23:00:28 IST" name="CloseApp" finished-at="2022-03-31T23:00:29 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-      </class> <!-- test_Scripts.TestScript1 -->
+      </class> <!-- test_Scripts.SampleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
