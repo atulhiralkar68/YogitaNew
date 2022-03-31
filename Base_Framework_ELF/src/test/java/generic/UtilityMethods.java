@@ -13,10 +13,8 @@ import org.openqa.selenium.support.ui.Select;
  * @author Yogita
  *
  */
-public class UtilityMethods {
-
-
-
+public class UtilityMethods 
+{
 	public WebDriver driver;	
 
 	public void get_title() {
@@ -29,11 +27,13 @@ public class UtilityMethods {
 		System.out.println(CurrentURL);
 	}
 
-	public void clickAction(WebElement element_To_Click) {
+	public void clickAction(WebElement element_To_Click) 
+	{
 		element_To_Click.click();
 	}
 
-	public void enter_value(WebElement TextField,String value) {		
+	public void enter_value(WebElement TextField,String value)
+	{		
 		TextField.sendKeys(value);
 	}
 
@@ -62,7 +62,9 @@ public class UtilityMethods {
 		String parent=driver.getWindowHandle(); 
 		Set<String> allWid=driver.getWindowHandles(); 
 		allWid.remove(parent); 
-		for(String sessionID:allWid){ 
+		
+		for(String sessionID:allWid)
+		{ 
 			driver.switchTo().window(sessionID);
 
 			if(element.isDisplayed()){ 
