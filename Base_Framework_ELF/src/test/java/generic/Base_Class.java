@@ -31,7 +31,7 @@ public class Base_Class implements FrameworkConstants{
 
 
 		if(browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();,
 			driver=new ChromeDriver();
 			/*
 			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
