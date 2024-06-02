@@ -42,6 +42,7 @@ public class Base_Class implements FrameworkConstants{
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
 			/*
+				
 			 * System.setProperty(FIREFOX_KEY,FIREFOX_PATH); driver=new FirefoxDriver();
 			 * Reporter.log("Successfully Launched Firefox Browser",true);
 			 */
