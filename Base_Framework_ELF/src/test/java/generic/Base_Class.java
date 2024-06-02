@@ -34,8 +34,6 @@ public class Base_Class implements FrameworkConstants{
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			/*
-			
-			
 			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
 			 * Reporter.log("Successfully Launched Chrome Browser",true);
 			 */
