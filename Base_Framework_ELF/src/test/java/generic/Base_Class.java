@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import generic.PropertyFileReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -35,6 +34,8 @@ public class Base_Class implements FrameworkConstants{
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			/*
+			
+			
 			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
 			 * Reporter.log("Successfully Launched Chrome Browser",true);
 			 */
