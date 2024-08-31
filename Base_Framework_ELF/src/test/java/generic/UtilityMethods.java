@@ -50,8 +50,10 @@ public class UtilityMethods
 	public void switchToASpecificTitledWindow(String title) { 
 		String parentWindowId = driver.getWindowHandle(); 
 
-		Set<String> allWindowIds = driver.getWindowHandles(); allWindowIds.remove(parentWindowId); 
-		for(String windowId:allWindowIds){ driver.switchTo().window(windowId);
+		Set<String> allWindowIds = driver.getWindowHandles(); 
+		allWindowIds.remove(parentWindowId); 
+		for(String windowId:allWindowIds){
+			 driver.switchTo().window(windowId);
 		if(driver.getTitle().equalsIgnoreCase(title)){ 
 			break; 
 		} 
