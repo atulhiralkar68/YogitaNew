@@ -13,7 +13,7 @@ public class LoginPage extends UtilityMethods
 	{
 		// TODO Auto-generated constructor stub
 		
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);	
 	}
 	
 	@FindBy(xpath = "//input[@id=\'user-name\']")
