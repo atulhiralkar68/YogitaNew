@@ -1,5 +1,6 @@
 package generic;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -11,8 +12,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * 
@@ -31,30 +30,28 @@ public class Base_Class implements FrameworkConstants{
 
 
 		if(browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
-			/*
-			
-			
-			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
-			 * Reporter.log("Successfully Launched Chrome Browser",true);
-			 */
+			 // System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
+			Reporter.log("Successfully Launched Chrome Browser",true);
+			//Teting ignore this line 
+		
 		}else if(browserName.equalsIgnoreCase("firefox")) {
 
-			WebDriverManager.firefoxdriver().setup();
+			//WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
-			/*
+			/*test
 			 * System.setProperty(FIREFOX_KEY,FIREFOX_PATH); driver=new FirefoxDriver();
 			 * Reporter.log("Successfully Launched Firefox Browser",true);
 			 */
 		}else {
-			Reporter.log("Enter valid Browser name");
+			Reporter.log("Enter valid Browser name", true);
 		}
 
 		driver.manage().window().maximize();
 		Reporter.log("Browser window is maximized successfully",true);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		WebDriverWait explicitWait = new WebDriverWait(driver, 10);
+		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		PropertyFileReader fileReader=new PropertyFileReader();
         String URL=fileReader.getValueProperty("URL");
 		driver.get(URL);
